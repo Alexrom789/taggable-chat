@@ -5,10 +5,8 @@ const getMessages = (req, res) => {
       if(err) {
           return res.end(err);
       } else {
-          console.log('foundMessages: ', foundMessages);
           res.send(foundMessages);
       }
-    //   else 
   });
 };
 
