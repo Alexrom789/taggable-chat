@@ -6,9 +6,9 @@ const getMessages = (req, res) => {
           return res.end(err);
       } else {
           console.log('foundMessages: ', foundMessages);
-          console.log('success');
+          res.send(foundMessages);
       }
-    //   else res.send(foundMessages);
+    //   else 
   });
 };
 
